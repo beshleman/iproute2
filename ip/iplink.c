@@ -53,8 +53,8 @@ void iplink_types_usage(void)
 		"          ipip | ipoib | ipvlan | ipvtap |\n"
 		"          macsec | macvlan | macvtap |\n"
 		"          netdevsim | nlmon | rmnet | sit | team | team_slave |\n"
-		"          vcan | veth | vlan | vrf | vti | vxcan | vxlan | wwan |\n"
-		"          xfrm | virt_wifi }\n");
+		"          vcan | veth | vlan | vrf | vsock | vti | vxcan | vxlan |\n"
+		"          wwan | xfrm | virt_wifi }\n");
 }
 
 void iplink_usage(void)

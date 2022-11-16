@@ -243,6 +243,7 @@ ip-link \- network device configuration
 .BR virt_wifi " |"
 .BR vlan " | "
 .BR vrf " |"
+.BR vsock " | "
 .BR vti " |"
 .BR vxcan " | "
 .BR vxlan " |"
@@ -394,6 +395,9 @@ Link types:
 .sp
 .BR vrf
 - Interface for L3 VRF domains
+.sp
+.B vsock
+- VSOCK device interface
 .sp
 .BR vti
 - Virtual tunnel interface
@@ -2844,6 +2848,11 @@ Creates a IP6ERSPAN version 2 interface named ip6erspan00.
 ip link set dev swp0 type dsa conduit eth1
 .RS 4
 Changes the conduit interface of the swp0 user port to eth1.
+.RE
+.PP
+ip link set dev vsock0 type vsock cid 2
+.RS 4
+Changes vsock device vsock0 to be responsible for flows with CID 2.
 .RE
 
 .SH SEE ALSO
